@@ -1,3 +1,6 @@
+import apiFetcher from "./apiFetcher"
+
+
 const content = document.getElementById('content')
 
 const api_key = '8802b20c2a01fb90f6f23dfeba4d3866'
@@ -65,5 +68,7 @@ async function getApiData() {
     console.log(currLocation.weather)
 }
 
+const testApi = new apiFetcher()
+testApi.getLocationData('Boston')
 
-getApiData()
+console.log(testApi.getLocationName())
