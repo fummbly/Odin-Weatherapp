@@ -13,4 +13,8 @@ export default class Location {
     getWeather() {
         return this.weather
     }
+
+    getName() {
+        return this.name
+    }
 }
