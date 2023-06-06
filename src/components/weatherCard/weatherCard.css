@@ -1,0 +1,5 @@
+.weather-card {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+    padding: 1rem;
+    border-radius: .5rem;
+}

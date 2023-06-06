@@ -6,7 +6,11 @@ export default class Date {
         this.time = time;
     }
 
-    print() {
+    printDate() {
         return `${this.month}-${this.day}-${this.year}`
+    }
+
+    printTime() {
+        return this.time
     }
 }

@@ -3,7 +3,9 @@ export default class Location {
         this.name = name;
         this.lat = lat;
         this.lon = lon;
-        this.weather = []
+        this.currForecast = null
+        this.daily = []
+        this.hourly = []
     }
 
     addWeather(forecast) {
@@ -16,5 +18,13 @@ export default class Location {
 
     getName() {
         return this.name
+    }
+
+    addCurrForecast(forecast) {
+        this.currForecast = forecast
+    }
+
+    addDailyForecast(forecast) {
+        this.daily.push(forecast)
     }
 }
