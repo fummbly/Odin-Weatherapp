@@ -32,6 +32,11 @@ searchInput.type = 'text'
 const searchBtn = document.createElement('button')
 searchBtn.type = 'submit'
 searchBtn.innerHTML = 'Search'
+searchBtn.addEventListener('click', async (location, currLocation) => {
+    location = searchInput.value;
+    currLocation = await getLocationData(location)
+    await getForecast(currLocation);
+})
 
 
 searchDiv.appendChild(searchInput)
